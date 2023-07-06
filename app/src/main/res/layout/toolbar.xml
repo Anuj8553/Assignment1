@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/linear"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:text="Hello,"
+            android:textSize="24dp"
+            android:id="@+id/hi"
+            android:padding="0dp"
+            android:textColor="@color/white"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:src="@drawable/img_6"
+            android:layout_alignParentEnd="true"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_below="@id/hi"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:text="Ayush"
+            android:textSize="32dp"
+            android:textColor="@color/white"
+            />
+
+        <EditText
+            android:layout_width="352dp"
+            android:layout_height="52dp"
+            android:layout_below="@id/name"
+            android:paddingLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/baseline_search_24"
+            android:hint="Explore"
+            android:padding="5dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
